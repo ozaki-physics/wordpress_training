@@ -1,3 +1,35 @@
+# 20201023
+p57
+ディレクトリ構造が書いてあって参考になりそう。
+p58
+1つのページを分割する方法が書いてある。テンプレートファイルという。
+p61
+`<?php get_header(); ?>`で`header.php`が読み込めるらしい。
+p66
+`get_header()`は、`header.php`を読み込む。
+`get_footer()`は、`footer.php`を読み込む。
+`get_header('example')`は、`header-example.php`を読み込む。
+また、
+`get_template_part('header')`は、`get_header()`と同義であり、`header.php`を読み込む。
+`get_template_part('footer-top')`は、`get_footer('top')`と同義であり、`footer-top.php`を読み込む。
+p66
+パーツテンプレートとは、他のテンプレートから呼び出されるテンプレート(例:`header.php`)
+メインテーマテンプレートとは、WordPressから直接呼び出されるテンプレート(例:`index.php`)
+ページ種類別テンプレートとは、上記2つ以外のテンプレート
+p113参照せよ
+p67
+`wp_get_document_title()`は、サイトの名称に置換
+`bloginfo('name')`は、WordPress管理画面の"設定>一般"で設定されたサイトタイトルを表示する。
+`bloginfo('description')`は、キャッチフレーズを表示するテンプレートタグ
+
+`wp_head()`と`wp_foot()`は、テーマ作成時に必ず必要なテンプレートタグ。
+メタタグの出力、JavaScriptのライブラリ読み込み、WordPressのツールバー、WordPressがHTMLを出力するために必要。
+
+## 参考文献
+【基礎知識】ブロックレベル要素・インライン要素の性質と違い | Webmedia
+https://www.itra.co.jp/webmedia/block-inline-difference.html
+
+CSSに変数が使えるようになったらしい?
 # 20201020
 サイトのURLを決めないとな。
 
