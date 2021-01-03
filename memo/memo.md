@@ -1,3 +1,9 @@
+## sampleダウンロード
+https://www.facebook.com/wordpress5book
+
+見本サイト
+https://wpbook-pacificmall.work/
+
 # 20201023
 p57
 ディレクトリ構造が書いてあって参考になりそう。
